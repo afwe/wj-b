@@ -14,6 +14,7 @@ public class User {
     @Column(name = "id")
     int id;
 
+    String salt;
     String username;
     String password;
 
@@ -40,4 +41,8 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getSalt() { return salt; }
+
+    public void setSalt(String salt) { this.salt=salt; }
 }
